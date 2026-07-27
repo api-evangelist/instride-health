@@ -1,8 +1,24 @@
 aid: instride-health
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/instride-health.png
 name: Instride Health
-description: Instride Health is a company surfaced as a portfolio company of general-catalyst and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: InStride Health is a virtual mental health provider delivering specialized, insurance-based
+  treatment for children, teens, and young adults ages 7 to 24 who struggle with anxiety, OCD, panic,
+  phobias, school avoidance, and related disorders. Its structured four-to-eight month program pairs each
+  patient with a coordinated care team of a therapist, a psychiatric prescriber, and an exposure coach,
+  combining evidence-based cognitive behavioral therapy and exposure-and-response prevention delivered
+  over telehealth. The company is backed by General Catalyst and tracked in the API Evangelist network;
+  it operates as a clinical care provider and publishes no public API, developer program, or SDK.
 url: https://raw.githubusercontent.com/api-evangelist/instride-health/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,12 +28,42 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Health
+- Mental Health
+- Telehealth
+- Pediatrics
+- Healthcare
+- HIPAA
 apis: []
+common:
+- type: DomainSecurity
+  url: security/instride-health-domain-security.yml
+- type: Website
+  url: https://instride.health/
+- type: About
+  url: https://instride.health/our-story
+- type: Careers
+  url: https://instride.health/about-us/careers
+- type: Blog
+  url: https://instride.health/resources?tab=Blogs
+- type: Compliance
+  url: https://instride.health/compliance/hipaa
+- type: PrivacyPolicy
+  url: https://instride.health/compliance/privacy-policy
+- type: TermsOfService
+  url: https://instride.health/compliance/terms-of-service
+- type: LinkedIn
+  url: https://www.linkedin.com/company/instride-health/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
